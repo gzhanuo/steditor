@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STEditor demo</title>
+    <link href="./css/steditor.css" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="content">
+                <h1>STEditor</h1>
+                <p>This is a simple text editor demo. Please explore!</p>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div id="container">
+            <div id="menubar">
+                <div class="btn-group heading">
+                    <button type="button" class="btn" title="Blocks">
+                        <span class="btn-icon"><i class="fa fa-header fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <div class="heading-list">
+                        <ul>
+                            <li><button type="button" data-command="formatBlock" data-value="H1" class="heading-list-item btn-command" title="Heading1"><span class="heading1">Heading 1</span></button></li>
+                            <li><button type="button" data-command="formatBlock" data-value="H2" class="heading-list-item btn-command" title="Heading2"><span class="heading2">Heading 2</span></button></li>
+                            <li><button type="button" data-command="formatBlock" data-value="H3" class="heading-list-item btn-command" title="Heading3"><span class="heading3">Heading 3</span></button></li>
+                            <li><button type="button" data-command="formatBlock" data-value="P" class="heading-list-item btn-command" title="Paragraph"><span class="paragraph">Paragraph</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" data-command="bold" class="btn btn-command" title="Bold">
+                        <span class="btn-icon"><i class="fa fa-bold fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" data-command="italic" class="btn btn-command" title="Italic">
+                        <span class="btn-icon"><i class="fa fa-italic fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" data-command="strikeThrough" class="btn btn-command" title="Strikethrough">
+                        <span class="btn-icon"><i class="fa fa-strikethrough fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" data-command="underline" class="btn btn-command" title="Underline">
+                        <span class="btn-icon"><i class="fa fa-underline fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" data-command="justifyLeft" class="btn btn-command" title="Align left">
+                        <span class="btn-icon"><i class="fa fa-align-left fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" data-command="justifyCenter" class="btn btn-command" title="Align center">
+                        <span class="btn-icon"><i class="fa fa-align-center fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" data-command="justifyRight" class="btn btn-command" title="Align right">
+                        <span class="btn-icon"><i class="fa fa-align-right fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" data-command="justifyFull" class="btn btn-command" title="Justify">
+                        <span class="btn-icon"><i class="fa fa-align-justify fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" data-command="insertOrderedList" class="btn btn-command" title="Numbered list">
+                        <span class="btn-icon"><i class="fa fa-list-ol fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" data-command="insertUnorderedList" class="btn btn-command" title="Bullet list">
+                        <span class="btn-icon"><i class="fa fa-list-ul fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" data-command="outdent" class="btn btn-command" title="Decrease indent">
+                        <span class="btn-icon"><i class="fa fa-dedent fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" data-command="indent" class="btn btn-command" title="Increase indent">
+                        <span class="btn-icon"><i class="fa fa-indent fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" data-command="removeFormat" class="btn btn-command" title="Clear formatting">
+                        <span class="btn-icon"><i class="fa fa-eraser fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" data-command="undo" class="btn btn-command" title="Undo">
+                        <span class="btn-icon"><i class="fa fa-reply fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" data-command="redo" class="btn btn-command" title="Redo">
+                        <span class="btn-icon"><i class="fa fa-share fa-lg" aria-hidden="true"></i></span>
+                    </button>
+                </div>
+            </div>
+            <div id="content" contenteditable="true"></div>
+        </div>
+    </div>
+    
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/steditor.js"></script>
+</body>
+</html>
