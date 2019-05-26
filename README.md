@@ -6,4 +6,4 @@
 
 ### 界面预览
 
-![editor](https:indexmoon.com/steditor/img/steditor.png)
+![editor](https://indexmoon.com/steditor/img/steditor.png)
