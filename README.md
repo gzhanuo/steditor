@@ -1,1 +1,1 @@
-# steditor
+# STEditor

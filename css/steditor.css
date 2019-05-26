@@ -1,11 +1,11 @@
 @font-face {
     font-family: "NunitoSans";
-    src: url("./../fonts/NunitoSans-Regular.ttf") format("ttf");
+    src: url("./../fonts/NunitoSans-Regular.ttf");
 }
 
 @font-face {
     font-family: "NunitoSans";
-    src: url("./../fonts/NunitoSans-Bold.ttf") format("ttf");
+    src: url("./../fonts/NunitoSans-Bold.ttf");
     font-weight: bold;
 }
 
@@ -22,12 +22,6 @@ body {
 div {
     border: none;
     outline: none;
-}
-
-ul, ul li {
-   list-style: none;
-   padding: 0;
-   margin: 0; 
 }
 
 button {
@@ -139,6 +133,8 @@ button {
 
 .heading-list ul {
     margin: 2px 0;
+    list-style: none;
+    padding: 0;
 }
 
 .heding-list li {
@@ -189,7 +185,7 @@ button {
     height: 420px;
     overflow: auto;
     color: #626262;
-    font-size: 16px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.5;
     font-family: "NunitoSans", Hiragino Sans GB, "Microsoft YaHei";
 }
